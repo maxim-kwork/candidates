@@ -1,0 +1,372 @@
+@media (width < 1355px) {
+	:root {
+		--var-header-bg: #888b83;
+	}
+	[dark] {
+		--var-header-bg: #333;
+	}
+	/* ===== */
+	.feedback__img {
+		display: none;
+	}
+	.feedback__info {
+		max-width: 750px;
+		margin: 0 auto;
+	}
+	/* ===== */
+	.header__top {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background: var(--var-header-bg);
+		z-index: 100;
+		height: 100%;
+		min-width: 320px;
+		transform: translateY(-100%);
+		transition: all 0.35s ease-in-out;
+	}
+	.header__top--open {
+		transform: translateY(0%);
+	}
+	.header__search {
+		margin: 20px 0 0 0;
+		width: 240px;
+	}
+	.header__top-inner,
+	.header__nav-list {
+		flex-direction: column;
+	}
+	.header__top-inner {
+		margin-top: 50%;
+	}
+	.header__info,
+	.header__logo,
+	.header__burger.header__burger--crossed span {
+		display: none;
+	}
+	.header__burger {
+		display: block;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		padding: 10px;
+		border-radius: 4px;
+	}
+	.header__burger span {
+		display: block;
+		width: 15px;
+		height: 5px;
+		margin: 4px 0;
+		border-radius: 4px;
+		transition: all 0.35s ease-in-out;
+		background: #111827;
+	}
+	.header__burger:hover span {
+		width: 30px;
+	}
+	.header__burger::before,
+	.header__burger::after {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 5px;
+		border-radius: 4px;
+		background: #111827;
+	}
+	.header__burger.header__burger--crossed::before {
+		transform: rotate(-45deg) translate(0, 50%);
+		transition: all 0.35s ease-in-out;
+	}
+	.header__burger.header__burger--crossed::after {
+		transform: rotate(45deg) translate(0, -50%);
+		transition: all 0.35s ease-in-out;
+	}
+	.header__switch {
+		margin-top: 20px;
+	}
+}
+@media (width < 1210px) {
+	/* ===== */
+	.header__title {
+		font-size: 52px;
+		margin-bottom: 20px;
+	}
+	.header__box {
+		margin-top: 40px;
+	}
+}
+@media (width < 1195px) {
+	/* ===== */
+	.about__inner {
+		flex-direction: column;
+	}
+	.about__why {
+		margin-bottom: 20px;
+	}
+	/* ===== */
+	.team__title,
+	.path__title {
+		margin-bottom: 20px;
+	}
+}
+@media (width < 1125px) {
+	/* ===== */
+	.header__title {
+		font-size: 44px;
+	}
+	/* ===== */
+	.route__slider-rating {
+		display: none;
+	}
+}
+@media (width <= 1100px) {
+	/* ===== */
+	.header__nav-list {
+		gap: 12px;
+	}
+	.header__title {
+		font-size: 36px;
+	}
+	.header__subtitle {
+		max-width: 400px;
+	}
+}
+@media (width < 985px) {
+	/* ===== */
+	.header__body-inner {
+		flex-direction: column-reverse;
+	}
+	.header__main {
+		text-align: center;
+	}
+	.header__subtitle {
+		max-width: 570px;
+	}
+	.header__box {
+		margin-top: 20px;
+	}
+}
+@media (width < 800px) {
+	/* ===== */
+	.feedback__info {
+		max-width: 425px;
+	}
+	.feedback__info-input,
+	.feedback__info-btn {
+		width: 340px;
+	}
+	.feedback__info-subtitle {
+		font-size: 20px;
+	}
+	/* ===== */
+	.about__why-text {
+		font-size: 20px;
+	}
+	.about__why-name {
+		font-size: 24px;
+	}
+	.about__why-checkbox {
+		margin-right: 10px;
+	}
+	/* ===== */
+	.footer__rows-wrapper {
+		flex-direction: column;
+	}
+}
+@media (width < 700px) {
+	/* ===== */
+	.route__slider-item {
+		margin: 0 auto;
+	}
+	.route__slider-info {
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (width < 670px) {
+	/* ===== */
+	/* ===== */
+	.path__title,
+	.team__title,
+	.about__why-title,
+	.about__sub-title {
+		font-size: 32px;
+	}
+	/* ===== */
+	.about__sub-number {
+		font-size: 165px;
+		margin: 292px 0 0 10px;
+	}
+}
+@media (width < 660px) {
+	/* ===== */
+	.team__slide {
+		margin: 0 auto;
+	}
+}
+@media (width < 585px) {
+	/* ===== */
+	.route__slider-arrows {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+	/* ===== */
+	.team__slide-arrows {
+		position: static;
+		display: flex;
+		justify-content: center;
+	}
+}
+@media (width < 560px) {
+	/* ===== */
+	.header__img {
+		max-width: 320px;
+	}
+	/* ===== */
+	.about__why {
+		padding: 30px;
+	}
+	.about__why-name {
+		font-size: 22px;
+	}
+	.about__why-checkbox {
+		margin-right: 5px;
+	}
+	.about__sub {
+		padding: 40px 30px;
+		max-width: 400px;
+	}
+	.about__sub-number {
+		margin: 267px 0 0 10px;
+	}
+	/* ===== */
+	.footer__about {
+		flex-direction: column;
+		gap: 10px;
+	}
+	.footer__line {
+		margin: 20px 0 20px;
+	}
+}
+@media (width < 470px) {
+	/* ===== */
+	.header__box-choose,
+	.header__box-base {
+		display: block;
+		width: 220px;
+		margin: 0 auto;
+	}
+	/* ===== */
+	.feedback__info {
+		padding: 30px 20px 50px;
+		max-width: 385px;
+	}
+	.feedback__info-input:last-child,
+	.header__box-choose {
+		margin-bottom: 10px;
+	}
+	.feedback__info-subtitle,
+	.feedback__info-btn {
+		margin-bottom: 20px;
+	}
+}
+@media (width < 455px) {
+	/* ===== */
+	.about__why-title {
+		margin-bottom: 10px;
+	}
+	.about__why-top {
+		margin-bottom: 5px;
+	}
+	.about__why-text {
+		font-size: 18px;
+	}
+	.about__sub-number {
+		margin: 312px 0 0 10px;
+	}
+	/* ===== */
+	.path__title,
+	.team__title,
+	.about__why-title,
+	.about__sub-title {
+		font-size: 28px;
+	}
+}
+@media (width < 435px) {
+	/* ===== */
+	.header__title {
+		font-size: 30px;
+	}
+	.header__subtitle {
+		font-size: 22px;
+	}
+	/* ===== */
+	.about__sub {
+		text-align: center;
+		max-width: 320px;
+	}
+	.about__sub-title {
+		margin-bottom: 10px;
+	}
+	.about__sub-desc {
+		margin-bottom: 20px;
+	}
+	.about__sub-number {
+		font-size: 142px;
+		margin: 326px 0 0 -28px;
+	}
+	/* ===== */
+	.feedback__info {
+		padding: 20px 20px 20px;
+		max-width: 320px;
+	}
+	.feedback__info-input,
+	.feedback__info-btn {
+		width: 280px;
+	}
+	.feedback__info-title {
+		font-size: 24px;
+	}
+	.feedback__info-subtitle {
+		font-size: 16px;
+	}
+}
+@media (width < 375px) {
+	/* ===== */
+	.header__title {
+		font-size: 26px;
+		margin: 0;
+	}
+	.header__subtitle {
+		display: none;
+	}
+}
+@media (width < 355px) {
+	/* ===== */
+	.about__sub {
+		max-width: 290px;
+	}
+	.about__sub-number {
+		font-size: 132px;
+	}
+	/* ===== */
+	.team__slide {
+		width: 270px;
+	}
+	.team__slide-btn {
+		padding: 12px 24px;
+	}
+	/* ===== */
+	.feedback__info {
+		max-width: 280px;
+	}
+	.feedback__info-input,
+	.feedback__info-btn {
+		width: 240px;
+	}
+	/* ===== */
+	.footer__about {
+		white-space: nowrap;
+	}
+}

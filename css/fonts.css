@@ -1,0 +1,27 @@
+@font-face {
+	font-family: Calibri;
+	font-weight: 400;
+	font-style: normal;
+	src: local('Calibri'), url('../fonts/calibri-regular.woff2') format('woff2'),
+		url('../fonts/calibri-regular.woff') format('woff'),
+		url('../fonts/calibri-regular.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: Calibri;
+	font-weight: 700;
+	font-style: normal;
+	src: local('Calibri'), url('../fonts/calibri-bold.woff2') format('woff2'),
+		url('../fonts/calibri-bold.woff') format('woff'),
+		url('../fonts/calibri-bold.eot') format('eot');
+	font-display: swap;
+}
+@font-face {
+	font-family: Fira Sans;
+	font-weight: 400;
+	font-style: normal;
+	src: local('Fira Sans'), url('../fonts/firasans-regular.woff2') format('woff2'),
+		url('../fonts/firasans-regular.woff') format('woff'),
+		url('../fonts/firasans-regular.eot') format('eot');
+	font-display: swap;
+}
